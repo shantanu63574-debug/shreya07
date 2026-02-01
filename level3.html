@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 3</title>
+<style>
+body{
+  font-family:system-ui;
+  background:#ffe6ee;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.card{
+  background:white;
+  padding:26px;
+  border-radius:22px;
+  text-align:center;
+}
+input{
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+button{
+  margin-top:15px;
+  padding:12px 20px;
+  border:none;
+  border-radius:14px;
+  background:#ff4d88;
+  color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Level 3 🧠</h2>
+  <p>Type this word to continue:</p>
+  <b>momo</b><br><br>
+
+  <input id="inp">
+  <br>
+  <button onclick="check()">Submit</button>
+</div>
+
+<script>
+function check(){
+  if(document.getElementById("inp").value.toLowerCase()=="momo"){
+    location.href="final.html";
+  }
+}
+</script>
+
+</body>
+</html>
