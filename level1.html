@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 1</title>
+<style>
+body{
+  font-family:system-ui;
+  background:#ffe6ee;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.card{
+  background:white;
+  padding:26px;
+  border-radius:22px;
+  text-align:center;
+}
+#momo{
+  font-size:50px;
+  cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Level 1 🥟</h2>
+  <p>Tap the momo 5 times</p>
+  <div id="momo" onclick="tap()">🥟</div>
+  <p id="count">0 / 5</p>
+</div>
+
+<script>
+let c=0;
+function tap(){
+  c++;
+  document.getElementById("count").innerText=c+" / 5";
+  if(c>=5){
+    location.href="level2.html";
+  }
+}
+</script>
+
+</body>
+</html>
